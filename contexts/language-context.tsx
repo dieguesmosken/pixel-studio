@@ -77,12 +77,15 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   return <LanguageContext.Provider value={{ language, setLanguage, t }}>{children}</LanguageContext.Provider>
 }
 
-// Custom hook to use the language context
+// Custom hook to use the language context e Adicione um fallback no caso de a chave não ser encontrada. 
 export function useLanguage() {
   const context = useContext(LanguageContext)
-  if (context === undefined) {
-    throw new Error("useLanguage must be used within a LanguageProvider")
+  // Override the `t` function to include a fallback parameter
+  const tWithFallback = (key: string, fallback?: string): string => {
+    const translation = context.t(key)
+    return translation !== key ? translation : fallback || key
   }
-  return context
+
+  return { ...context, t: tWithFallback }
 }
 

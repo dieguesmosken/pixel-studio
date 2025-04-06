@@ -21,13 +21,13 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-sm font-medium">
-              {t("nav.draw")}
+              {t("nav.draw","Draw")}
             </Link>
             <Link href="/download" className="text-sm font-medium">
-              {t("nav.download")} 
+              {t("nav.download", "Download")} 
             </Link>
             <Link href="/about" className="text-sm font-medium">
-              {t("nav.about")}
+              {t("nav.about", "About")}
             </Link>
             <Link href={githubRepo} target="_blank" rel="noopener noreferrer" className="text-sm font-medium">
               GitHub
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <LanguageSelector />
             <Link href="/editor">
-              <Button>{t("nav.buttonStart")}</Button>
+              <Button>{t("nav.buttonStart", "Start Now")}</Button>
             </Link>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-sm text-primary hover:underline"
               >
-                {t("sectionMiddle.sourcecode")}
+                {t("sectionMiddle.sourcecode", "Source code")}
               </Link>
             </div>
           </div>
