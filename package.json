@@ -1,11 +1,19 @@
 {
-  "name": "my-v0-project",
+  "name": "pixel-studio",
+  "productName": "Pixel Studio",
+  "description": "Pixel Studio is a powerful and user-friendly pixel art editor designed for artists of all skill levels. With its intuitive interface, advanced features, and seamless integration with popular design tools, Pixel Studio empowers you to create stunning pixel art with ease.",
+  "author": "Teuzin0dev",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "concurrently \"npm run next\" \"npm run electron\"",
+    "next": "next dev",
+    "electron": "wait-on http://localhost:3000 && electron .",
+    "build:next": "next build && next export",
+    "build:app": "npm run build:next && electron-builder",
+    "start": "electron .",
     "lint": "next lint"
   },
   "dependencies": {
@@ -41,7 +49,8 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
-    "date-fns": "4.1.0",
+    "concurrently": "^8.2.2",
+    "date-fns": "^2.29.3",
     "embla-carousel-react": "8.5.1",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
@@ -57,14 +66,40 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.6",
+    "wait-on": "^7.0.1",
     "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "electron": "^29.1.5",
+    "electron-builder": "^26.0.12",
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
+  },
+  "build": {
+    "appId": "com.teuzin.app",
+    "productName": "pixel-studio",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**/*",
+      "main.js",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }
