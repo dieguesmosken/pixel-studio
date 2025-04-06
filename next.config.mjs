@@ -1,11 +1,12 @@
-let userConfig = undefined
+let userConfig = undefined;
+
 try {
   // tentar importar como ESM primeiro
-  userConfig = await import('./v0-user-next.config.mjs')
+  userConfig = await import('./v0-user-next.config.mjs');
 } catch (e) {
   try {
     // fallback para CJS
-    userConfig = await import('./v0-user-next.config')
+    userConfig = await import('./v0-user-next.config');
   } catch (innerError) {
     // ignorar erro
   }
@@ -28,11 +29,14 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: 'export', // necessário para next export automático
-}
+  assetPrefix: './', // necessário pra funcionar no Electron com caminhos relativos
+  trailingSlash: true, // adiciona '/' no final das rotas exportadas (importante pro Electron)
+  basePath: '', // pode ser alterado se estiver servindo de subdiretório, mas deixe vazio pro Electron
+};
 
 // Mescla as configs personalizadas do usuário, se existirem
 if (userConfig) {
-  const config = userConfig.default || userConfig
+  const config = userConfig.default || userConfig;
 
   for (const key in config) {
     if (
@@ -42,11 +46,11 @@ if (userConfig) {
       nextConfig[key] = {
         ...nextConfig[key],
         ...config[key],
-      }
+      };
     } else {
-      nextConfig[key] = config[key]
+      nextConfig[key] = config[key];
     }
   }
 }
 
-export default nextConfig
+export default nextConfig;
