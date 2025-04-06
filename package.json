@@ -15,7 +15,8 @@
     "build:next": "next build",
     "build:app": "npm run build:next && electron-builder",
     "start": "electron .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "cross-env NEXT_EXPORT=true next export"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -74,6 +75,7 @@
     "@types/node": "^22",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",
+    "cross-env": "^7.0.3",
     "electron": "^29.1.5",
     "electron-builder": "^26.0.12",
     "postcss": "^8",
@@ -82,7 +84,7 @@
   },
   "build": {
     "appId": "com.teuzin.app",
-    "productName": "pixel-studio",
+    "productName": "Pixel Studio",
     "directories": {
       "output": "release"
     },
@@ -95,15 +97,19 @@
       "target": [
         "nsis",
         "portable"
-      ]
+      ],
+      "icon": "public/icon/icon.ico"
     },
-    "nsis": {
-      "oneClick": false,
-      "perMachine": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "shortcutName": "Pixel Studio"
+    "mac": {
+      "target": "dmg",
+      "icon": "public/icon/icon.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "public"
     }
   }
 }

@@ -6,6 +6,7 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 1024,
     height: 768,
+    icon: path.join(__dirname, 'public/icons/icon.png'),
     webPreferences: {
       contextIsolation: true,
     }
@@ -14,7 +15,9 @@ function createWindow() {
   if (isDev) {
     win.loadURL("http://localhost:3000")
   } else {
-    win.loadFile(path.join(__dirname, "out/index.html"))
+    win.loadFile(path.join(__dirname, "../out/index.html"))
+    
+
   }
 }
 
