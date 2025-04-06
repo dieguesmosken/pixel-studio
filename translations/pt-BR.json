@@ -2,12 +2,27 @@
   "app.title": "Pixel Studio",
   "app.back": "Voltar para Início",
   "nav.draw": "Desenhar",
+  "nav.about": "Sobre",
+  "nav.download": "Baixar",
+  "nav.license": "Licença",
+  "nav.privacy": "Privacidade",
+  "nav.terms": "Termos de Uso",
+  "nav.contact": "Contato",
+  "nav.report": "Relatar Problema",
+  "nav.faq": "FAQ",
   "nav.animate": "Animar",
   "nav.settings": "Configurações",
   "nav.hidePanels": "Ocultar Painéis",
   "nav.showPanels": "Mostrar Painéis",
   "nav.export": "Exportar",
   "nav.save": "Salvar",
+  "nav.buttonStart": "Começar a Criar",
+
+  
+  "home.title": "Crie pixel art e animações incríveis",
+  "home.description": "Um poderoso editor de pixel art e animação com uma interface simples e intuitiva. Crie arte digital, sprites para jogos, animações e muito mais. Com suporte a várias camadas, ferramentas de desenho avançadas e opções de exportação flexíveis, você pode dar vida às suas ideias criativas.",
+  "home.buttonTry": "Experimente Online",
+  "home.buttonDownload": "Baixar Agora",
 
   "tools.title": "Ferramentas de Desenho",
   "tools.pencil": "Lápis",
@@ -105,8 +120,8 @@
   "settings.zoom": "Zoom",
 
   "language.title": "Idioma",
-  "language.en": "English",
+  "language.en": "Inglês",
   "language.pt-BR": "Português (Brasil)",
-  "language.es": "Español"
+  "language.es": "Espanhol"
 }
 

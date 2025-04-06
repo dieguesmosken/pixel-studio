@@ -64,7 +64,7 @@ export default function AboutPage() {
                 feature, or improving documentation, your help makes Pixel Studio better for everyone.
               </p>
               <div className="flex justify-center">
-                <Link href="https://github.com/pixel-studio/pixel-studio" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/dieguesmosken/pixel-studio" target="_blank" rel="noopener noreferrer">
                   <Button className="gap-2">
                     <Github className="h-4 w-4" />
                     Contribute on GitHub
@@ -79,7 +79,7 @@ export default function AboutPage() {
                 <div className="w-24 h-24 bg-gray-200 dark:bg-zinc-700 rounded-full mb-4 overflow-hidden">
                   <div className="w-full h-full bg-grid-pattern opacity-30"></div>
                 </div>
-                <h3 className="text-xl font-bold">Alex Chen</h3>
+                <h3 className="text-xl font-bold">Matheus Mosken Diegues</h3>
                 <p className="text-gray-500 mb-2">Founder & Lead Developer</p>
                 <p className="text-sm text-gray-500 mb-4">
                   Game developer and pixel artist with a passion for creating tools that make digital art more
@@ -87,7 +87,7 @@ export default function AboutPage() {
                 </p>
                 <div className="flex gap-2">
                   <Link
-                    href="https://github.com/alexchen"
+                    href="https://github.com/dieguesmosken"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-gray-700"
@@ -95,7 +95,7 @@ export default function AboutPage() {
                     <Github className="h-5 w-5" />
                   </Link>
                   <Link
-                    href="https://twitter.com/alexchen"
+                    href="https://twitter.com/dieguesmosken"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-gray-700"
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <div className="w-24 h-24 bg-gray-200 dark:bg-zinc-700 rounded-full mb-4 overflow-hidden">
                   <div className="w-full h-full bg-grid-pattern opacity-30"></div>
                 </div>
-                <h3 className="text-xl font-bold">Maya Rodriguez</h3>
+                <h3 className="text-xl font-bold">Matheus Mosken Diegues</h3>
                 <p className="text-gray-500 mb-2">UI/UX Designer</p>
                 <p className="text-sm text-gray-500 mb-4">
                   Designer with a background in game development and a focus on creating intuitive interfaces for
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 </p>
                 <div className="flex gap-2">
                   <Link
-                    href="https://github.com/mayarodriguez"
+                    href="https://github.com/dieguesmosken"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-gray-700"
@@ -125,7 +125,7 @@ export default function AboutPage() {
                     <Github className="h-5 w-5" />
                   </Link>
                   <Link
-                    href="https://mayarodriguez.design"
+                    href="https://badwolf3d.com.br"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-gray-700"

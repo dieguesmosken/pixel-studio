@@ -9,7 +9,7 @@ export default function Home() {
   const { t } = useLanguage()
 
   // GitHub repository URL
-  const githubRepo = "https://github.com/pixel-studio/pixel-studio"
+  const githubRepo = "https://github.com/dieguesmosken/pixel-studio"
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -24,10 +24,10 @@ export default function Home() {
               {t("nav.draw")}
             </Link>
             <Link href="/download" className="text-sm font-medium">
-              Download
+              {t("nav.download")} 
             </Link>
             <Link href="/about" className="text-sm font-medium">
-              About
+              {t("nav.about")}
             </Link>
             <Link href={githubRepo} target="_blank" rel="noopener noreferrer" className="text-sm font-medium">
               GitHub
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <LanguageSelector />
             <Link href="/editor">
-              <Button>Start Creating</Button>
+              <Button>{t("nav.buttonStart")}</Button>
             </Link>
           </div>
         </div>
@@ -46,18 +46,23 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Create animations in your browser
+                {t("home.title")}
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                A powerful pixel art and animated sprite editor with live preview, multiple export options, and more.
+                {t("home.description")}
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/editor">
-                  <Button size="lg">Try Online Editor</Button>
+                  <Button size="lg">
+                    <ArrowDown className="h-4 w-4" />
+                    {t("nav.buttonStart")}
+                    </Button>
                 </Link>
                 <Link href="/download">
                   <Button size="lg" variant="outline">
-                    Download Desktop App
+                    <ArrowDown className="h-4 w-4" />
+                    {t("nav.download")}
+                    
                   </Button>
                 </Link>
               </div>
