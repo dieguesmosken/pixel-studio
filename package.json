@@ -83,7 +83,8 @@
     "typescript": "^5"
   },
   "build": {
-    "appId": "com.teuzin.app",
+    "appId": "com.teuzin0dev.pixelstudio",
+    "asar": true,
     "productName": "Pixel Studio",
     "directories": {
       "output": "release"

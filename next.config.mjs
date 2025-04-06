@@ -29,7 +29,7 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: 'export', // necessário para next export automático
-  assetPrefix: './', // necessário pra funcionar no Electron com caminhos relativos
+  assetPrefix: '', // deixar vazio pra evitar erro e deixar o Electron resolver com file://
   trailingSlash: true, // adiciona '/' no final das rotas exportadas (importante pro Electron)
   basePath: '', // pode ser alterado se estiver servindo de subdiretório, mas deixe vazio pro Electron
 };
