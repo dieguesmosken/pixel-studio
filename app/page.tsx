@@ -165,7 +165,10 @@ export default function Home() {
       </main>
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="text-sm text-gray-500">© 2024 Pixel Studio. All rights reserved.</p>
+          <p className="text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} <span className="hidden md:inline"> | </span>{t("footer.copyright")}
+            
+          </p>
           <div className="flex gap-4">
             <Link
               href={githubRepo}
@@ -176,13 +179,13 @@ export default function Home() {
               GitHub
             </Link>
             <Link href="/privacy" className="text-sm text-gray-500 hover:underline">
-              Privacy
+              {t("footer.privacy")}
             </Link>
             <Link href="/terms" className="text-sm text-gray-500 hover:underline">
-              Terms
+              {t("footer.terms")}
             </Link>
             <Link href="/about" className="text-sm text-gray-500 hover:underline">
-              About
+              {t("footer.about")}
             </Link>
           </div>
         </div>
