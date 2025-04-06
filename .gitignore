@@ -1,16 +1,19 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
+/.pnp
+.pnp.js
 
 # next.js
 /.next/
 /out/
 
-# production
-/build
+# electron build folders (mas deixa o .exe)
+!/release/*.exe
+/release/
+/dist/
+/build/
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -18,6 +21,7 @@ yarn-error.log*
 
 # env files
 .env*
+.env.*.local
 
 # vercel
 .vercel
@@ -25,3 +29,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE configs
+.vscode/
+.idea/
+*.swp
