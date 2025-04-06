@@ -1,6 +1,6 @@
-import type React from "react"
+import { ReactNode } from "react" // ✅ importação correta
 import type { Metadata } from "next"
-import localFont from 'next/font/local' // 👈 trocou aqui!
+import localFont from 'next/font/local'
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
@@ -19,7 +19,6 @@ const inter = localFont({
     },
   ],
   display: 'swap',
-  //  desativa preload automático (resolve o erro com assetPrefix './')
   preload: false,
 })
 
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
     <html lang="en">
