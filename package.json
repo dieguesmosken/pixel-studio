@@ -11,7 +11,8 @@
     "dev": "concurrently \"npm run next\" \"npm run electron\"",
     "next": "next dev",
     "electron": "wait-on http://localhost:3000 && electron .",
-    "build:next": "next build && next export",
+    "electron:dev": "npm run dev",
+    "build:next": "next build",
     "build:app": "npm run build:next && electron-builder",
     "start": "electron .",
     "lint": "next lint"
@@ -99,7 +100,10 @@
     "nsis": {
       "oneClick": false,
       "perMachine": false,
-      "allowToChangeInstallationDirectory": true
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Pixel Studio"
     }
   }
 }
