@@ -30,12 +30,13 @@
   "sectionMiddle.description2": "Exporte suas animações como GIFs, PNGs ou arquivos ZIP. Compartilhe facilmente suas criações com amigos ou use-as em seus projetos de jogos.",
   "sectionMiddle.title3": "Código aberto e gratuito",
   "sectionMiddle.description3": "Pixel Studio é um projeto de código aberto, o que significa que você pode contribuir para seu desenvolvimento e personalizá-lo de acordo com suas necessidades. E o melhor de tudo, é totalmente gratuito para uso pessoal e comercial.",
+  "sectionMiddle.sourceCode": "Código Fonte",
 
   "sectionBottom.title": "Disponivel para todas as plataformas",
   "sectionBottom.description": "Pixel Studio é um aplicativo multiplataforma, disponível para Windows, macOS, Linux, Android e iOS. Crie arte digital e animações em qualquer lugar, a qualquer hora. *(Android e IOS estão em desenvolvimento e serão lançados em breve.)",
-  "sectionBottom.buttonDownload": "Baixar Agora",
+  "sectionBottom.download": "Baixar Agora",
 
-  "footer.copyrights": "© 2024 dieguesmosken .Todos os direitos reservados",
+  "footer.copyrights": "Todos os direitos reservados",
   "footer.license": "Licença",
   "footer.privacy": "Privacidade",
   "footer.terms": "Termos de Uso",
