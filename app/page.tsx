@@ -176,7 +176,7 @@ export default function Home() {
           <p className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} <span className="hidden md:inline"> 
               <a href={githubRepo} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Pixel Studio </a>
-               | </span>{t("footer.copyright")}
+               | </span> {t("footer.copyright")}
             
           </p>
           <div className="flex gap-4">

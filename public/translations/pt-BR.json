@@ -2,12 +2,46 @@
   "app.title": "Pixel Studio",
   "app.back": "Voltar para Início",
   "nav.draw": "Desenhar",
+  "nav.about": "Sobre",
+  "nav.download": "Baixar",
+  "nav.license": "Licença",
+  "nav.privacy": "Privacidade",
+  "nav.terms": "Termos de Uso",
+  "nav.contact": "Contato",
+  "nav.report": "Relatar Problema",
+  "nav.faq": "FAQ",
   "nav.animate": "Animar",
   "nav.settings": "Configurações",
   "nav.hidePanels": "Ocultar Painéis",
   "nav.showPanels": "Mostrar Painéis",
   "nav.export": "Exportar",
   "nav.save": "Salvar",
+  "nav.buttonStart": "Começar a Criar",
+
+  
+  "home.title": "Crie pixel art e animações incríveis",
+  "home.description": "Um poderoso editor de pixel art e animação com uma interface simples e intuitiva. Crie arte digital, sprites para jogos, animações e muito mais. Com suporte a várias camadas, ferramentas de desenho avançadas e opções de exportação flexíveis, você pode dar vida às suas ideias criativas.",
+  "home.buttonTry": "Experimente Online",
+  "home.buttonDownload": "Baixar Agora",
+
+  "sectionMiddle.title1": "Visualização em Tempo Real",
+  "sectionMiddle.description1": "Veja suas criações ganhando vida em tempo real enquanto desenha e anima. A interface intuitiva permite que você faça ajustes instantâneos e veja os resultados imediatamente.",
+  "sectionMiddle.title2": "Multiplas opções de exportação",
+  "sectionMiddle.description2": "Exporte suas animações como GIFs, PNGs ou arquivos ZIP. Compartilhe facilmente suas criações com amigos ou use-as em seus projetos de jogos.",
+  "sectionMiddle.title3": "Código aberto e gratuito",
+  "sectionMiddle.description3": "Pixel Studio é um projeto de código aberto, o que significa que você pode contribuir para seu desenvolvimento e personalizá-lo de acordo com suas necessidades. E o melhor de tudo, é totalmente gratuito para uso pessoal e comercial.",
+  "sectionMiddle.sourceCode": "Código Fonte",
+
+  "sectionBottom.title": "Disponivel para todas as plataformas",
+  "sectionBottom.description": "Pixel Studio é um aplicativo multiplataforma, disponível para Windows, macOS, Linux, Android e iOS. Crie arte digital e animações em qualquer lugar, a qualquer hora. *(Android e IOS estão em desenvolvimento e serão lançados em breve.)",
+  "sectionBottom.download": "Baixar Agora",
+
+  "footer.copyright": "Todos os direitos reservados.",
+  "footer.license": "Licença",
+  "footer.privacy": "Privacidade",
+  "footer.terms": "Termos de Uso",
+  "footer.about": "Sobre",
+  "footer.contact": "Contato",
 
   "tools.title": "Ferramentas de Desenho",
   "tools.pencil": "Lápis",
@@ -105,8 +139,8 @@
   "settings.zoom": "Zoom",
 
   "language.title": "Idioma",
-  "language.en": "English",
+  "language.en": "Inglês",
   "language.pt-BR": "Português (Brasil)",
-  "language.es": "Español"
+  "language.es": "Espanhol"
 }
 

@@ -1,14 +1,20 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft, Download, Monitor, Apple, LaptopIcon as Linux } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  ArrowLeft,
+  Download,
+  Monitor,
+  Apple,
+  LaptopIcon as Linux,
+} from "lucide-react";
 
 export default function DownloadPage() {
   // Version information
-  const version = "1.0.0"
-  const releaseDate = "April 6, 2025"
+  const version = "1.0.0";
+  const releaseDate = "April 6, 2025";
 
   // GitHub repository URL
-  const githubRepo = "https://github.com/pixel-studio/pixel-studio"
+  const githubRepo = "https://github.com/dieguesmosken/pixel-studio";
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -23,13 +29,19 @@ export default function DownloadPage() {
       <main className="flex-1">
         <section className="container py-12 md:py-24 lg:py-32">
           <div className="mx-auto flex max-w-5xl flex-col items-center space-y-4 text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Download Pixel Studio</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Download Pixel Studio
+            </h1>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Free desktop & offline applications for all major platforms.
             </p>
             <div className="flex items-center gap-2">
-              <span className="text-sm bg-primary/10 text-primary px-2 py-1 rounded">Version {version}</span>
-              <span className="text-sm text-gray-500">Released: {releaseDate}</span>
+              <span className="text-sm bg-primary/10 text-primary px-2 py-1 rounded">
+                Version {version}
+              </span>
+              <span className="text-sm text-gray-500">
+                Released: {releaseDate}
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <Link
@@ -55,12 +67,16 @@ export default function DownloadPage() {
               </p>
               <div className="mt-auto pt-4">
                 <Button className="w-full gap-2" asChild>
-                  <Link href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-win-x64.exe`}>
+                  <Link
+                    href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-win-x64.exe`}
+                  >
                     <Download className="h-4 w-4" />
                     Download for Windows
                   </Link>
                 </Button>
-                <p className="mt-2 text-xs text-gray-500">Version {version} (64-bit)</p>
+                <p className="mt-2 text-xs text-gray-500">
+                  Version {version} (64-bit)
+                </p>
                 <div className="mt-2 text-xs text-gray-500 flex justify-center gap-2">
                   <Link
                     href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-win-x64.zip`}
@@ -83,27 +99,28 @@ export default function DownloadPage() {
               </div>
               <h3 className="text-xl font-bold">macOS</h3>
               <p className="text-center text-sm text-gray-500">
-                Compatible with macOS 10.15 and later. Universal binary for Intel and Apple Silicon.
+                Compatible with macOS 10.15 and later. Universal binary for
+                Intel and Apple Silicon.
               </p>
               <div className="mt-auto pt-4">
                 <Button className="w-full gap-2" asChild>
-                  <Link href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-mac-universal.dmg`}>
+                  {/* <Link href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-mac-universal.dmg`}>
                     <Download className="h-4 w-4" />
                     Download for macOS
+                  </Link> */}
+                  <Link href="">
+                    <Download className="h-4 w-4" />
+                    Not available
                   </Link>
                 </Button>
-                <p className="mt-2 text-xs text-gray-500">Version {version} (Universal)</p>
+                <p className="mt-2 text-xs text-gray-500">
+                  Version {version} (Universal)
+                </p>
                 <div className="mt-2 text-xs text-gray-500 flex justify-center gap-2">
-                  <Link
-                    href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-mac-intel.dmg`}
-                    className="hover:underline"
-                  >
+                  <Link href="" className="hover:underline">
                     Intel
                   </Link>
-                  <Link
-                    href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-mac-arm64.dmg`}
-                    className="hover:underline"
-                  >
+                  <Link href="" className="hover:underline">
                     Apple Silicon
                   </Link>
                 </div>
@@ -115,23 +132,21 @@ export default function DownloadPage() {
               </div>
               <h3 className="text-xl font-bold">Linux</h3>
               <p className="text-center text-sm text-gray-500">
-                Available as AppImage, deb, and rpm packages for most distributions.
+                Available as AppImage, deb, and rpm packages for most
+                distributions.
               </p>
               <div className="mt-auto pt-4">
                 <Button className="w-full gap-2" asChild>
-                  <Link
-                    href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-linux-x86_64.AppImage`}
-                  >
+                  <Link href="">
                     <Download className="h-4 w-4" />
-                    Download for Linux
+                    Not available
                   </Link>
                 </Button>
-                <p className="mt-2 text-xs text-gray-500">Version {version} (x86_64)</p>
+                <p className="mt-2 text-xs text-gray-500">
+                  Version {version} (x86_64)
+                </p>
                 <div className="mt-2 text-xs text-gray-500 flex justify-center gap-2">
-                  <Link
-                    href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-linux-amd64.deb`}
-                    className="hover:underline"
-                  >
+                  <Link href="" className="hover:underline">
                     .deb
                   </Link>
                   <Link
@@ -140,10 +155,7 @@ export default function DownloadPage() {
                   >
                     .rpm
                   </Link>
-                  <Link
-                    href={`${githubRepo}/releases/download/v${version}/pixel-studio-${version}-linux-x86_64.tar.gz`}
-                    className="hover:underline"
-                  >
+                  <Link href="" className="hover:underline">
                     .tar.gz
                   </Link>
                 </div>
@@ -153,7 +165,9 @@ export default function DownloadPage() {
         </section>
         <section className="container pb-12 md:pb-24 lg:pb-32 border-t pt-12">
           <div className="mx-auto flex max-w-5xl flex-col items-center space-y-4 text-center">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">System Requirements</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
+              System Requirements
+            </h2>
             <div className="w-full max-w-3xl">
               <div className="mt-6 grid gap-4 md:grid-cols-3">
                 <div className="rounded-lg border p-4">
@@ -189,10 +203,12 @@ export default function DownloadPage() {
         </section>
         <section className="container pb-12 md:pb-24 lg:pb-32 border-t pt-12">
           <div className="mx-auto flex max-w-5xl flex-col items-center space-y-4 text-center">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Open Source</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
+              Open Source
+            </h2>
             <p className="max-w-[600px] text-gray-500">
-              Pixel Studio is completely open source and free to use. You can view the source code, contribute, or
-              report issues on GitHub.
+              Pixel Studio is completely open source and free to use. You can
+              view the source code, contribute, or report issues on GitHub.
             </p>
             <Button asChild>
               <Link href={githubRepo} target="_blank" rel="noopener noreferrer">
@@ -204,21 +220,31 @@ export default function DownloadPage() {
       </main>
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="text-sm text-gray-500">© 2024 Pixel Studio. All rights reserved.</p>
+          <p className="text-sm text-gray-500">
+            © 2024 Pixel Studio. All rights reserved.
+          </p>
           <div className="flex gap-4">
-            <Link href={githubRepo} className="text-sm text-gray-500 hover:underline">
+            <Link
+              href={githubRepo}
+              className="text-sm text-gray-500 hover:underline"
+            >
               GitHub
             </Link>
-            <Link href="/privacy" className="text-sm text-gray-500 hover:underline">
+            <Link
+              href="/privacy"
+              className="text-sm text-gray-500 hover:underline"
+            >
               Privacy
             </Link>
-            <Link href="/terms" className="text-sm text-gray-500 hover:underline">
+            <Link
+              href="/terms"
+              className="text-sm text-gray-500 hover:underline"
+            >
               Terms
             </Link>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
